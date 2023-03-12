@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", sans-serif;
+}
+body {
+  background: #f7c04a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #3f497f;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.4);
+}
+
+.container .left_Side {
+  position: relative;
+  background: #3f497f;
+  padding: 40px;
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  color: #f8f5e4;
+  border-bottom: 1px solid #f8f5e4;
+}
+
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileText h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profileText h3 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: #f7c04a;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactInfo ul {
+  position: relative;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 40px;
+  font-size: 18px;
+  color: #f7c04a;
+}
+
+.contactInfo ul li span {
+  color: #f8f5e4;
+  font-weight: 300;
+}
+
+.contactInfo.edu li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactInfo.edu h5 {
+  color: #f8f5e4;
+  font-weight: 500;
+}
+
+.contactInfo.edu h6:nth-child(2) {
+  color: #f8f5e4;
+  font-weight: 500;
+}
+
+.contactInfo.edu h6 {
+  color: #f7c04a;
+  font-weight: 300;
+}
+
+.contactInfo.lang .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #539165;
+  display: block;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.contactInfo.lang .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #f7c04a;
+}
+
+.container .right_Side {
+  position: relative;
+  background: #539165;
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #f8f5e4;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #f8f5e4;
+  font-weight: 300;
+  line-height: 1.8em;
+  /*  border-bottom: #F7C04A 1px solid; */
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  color: #f8f5e4;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+    margin-right: 40px;
+    color: #f8f5e4;
+}
+
+.about .box .year_company h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.about .box .text h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f7c04a;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3f497f;
+}
